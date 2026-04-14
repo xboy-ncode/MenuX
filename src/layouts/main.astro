@@ -1,6 +1,7 @@
 ---
 import { FireParticles } from "@/components/menu/FireParticles";
 import "@/styles/globals.css";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 interface Props {
   title: string;
@@ -19,6 +20,7 @@ const { title } = Astro.props;
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <SpeedInsights />
   </head>
   <body class="bg-slate-950 min-h-screen font-sans antialiased text-slate-100">
 	<FireParticles client:load />
